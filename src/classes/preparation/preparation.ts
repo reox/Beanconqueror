@@ -157,6 +157,8 @@ export class Preparation implements IPreparation {
         return PREPARATION_STYLE_TYPE.POUR_OVER;
       case PREPARATION_TYPES.TRICOLATE:
         return PREPARATION_STYLE_TYPE.POUR_OVER;
+      case PREPARATION_TYPES.BRIPE:
+        return PREPARATION_STYLE_TYPE.FULL_IMMERSION;
       default:
         return PREPARATION_STYLE_TYPE.POUR_OVER;
     }
@@ -241,6 +243,8 @@ export class Preparation implements IPreparation {
         return 'beanconqueror-preparation-tornado-duo';
       case PREPARATION_TYPES.TRICOLATE:
         return 'beanconqueror-preparation-tricolate';
+      case PREPARATION_TYPES.BRIPE:
+        return 'beanconqueror-preparation-bripe';
       default:
         return 'beanconqueror-preparation-custom';
     }
